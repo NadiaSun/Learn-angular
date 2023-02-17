@@ -1,0 +1,80 @@
+* {
+  font-family: monospace;
+}
+
+.main {
+  display: block;
+  background: lightblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  text-align: -webkit-center;
+}
+
+.form-registration {
+  background: white;
+  max-width: 800px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+
+  .title {
+    padding: 6px;
+    font-size: 26px;
+  }
+  .form {
+    .btn-submit {
+      background: #2828a8;
+      color: white;
+      font-size: 24px;
+      width: 240px;
+      border: none;
+      border-radius: 8px;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    padding: 0 140px 40px 140px;
+    .field-list {
+      font-size: 18px;
+      margin-bottom: 10px;
+      input {
+          border: none;
+          padding: 0;
+          width: 20px;
+      }
+    }
+    .field-content {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: left;
+
+      .field-input {
+        &.error {
+          input {
+            border: 2px solid red;
+            color: red;
+          }
+        }
+        input {
+          border: 1px solid #4c4c65;
+          border-radius: 8px;
+          padding: 10px;
+          font-size: 18px;
+          width: 480px;
+          margin-top: 4px;
+        }
+      }
+
+      .field-check {
+        font-size: 18px;
+        color: lightslategrey;
+        &.error {
+          color: red;
+        }
+      }
+    }
+  }
+}
