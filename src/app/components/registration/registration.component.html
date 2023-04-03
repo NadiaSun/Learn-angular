@@ -31,7 +31,13 @@
         <div class="field-content">
           <div class="field-input">
             <label for="city">City</label><br>
-            <input type="text" id="city">
+            <input type="text" id="city" [(ngModel)]="sourceCity">
+          </div>
+          <div class="pre-city" *ngIf="sourceCity !== ''">
+            <p
+              class="city"
+              *ngFor="let info of cities"
+            >{{info.city}} <small>({{info.region}}, {{info.country}})</small></p>
           </div>
         </div>
 
