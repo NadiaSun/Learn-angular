@@ -75,6 +75,26 @@
           color: red;
         }
       }
+
+      .pre-city {
+        margin-top: 5px;
+        position: absolute;
+        background: white;
+        border: 1px solid grey;
+        width: 480px;
+        overflow-y: scroll;
+        padding: 10px;
+        max-height: 160px;
+        p {
+          border-bottom: 1px solid grey;
+          font-size: 16px;
+          padding-bottom: 10px;
+          margin: 5px;
+          small {
+            color: #9E9E9E;
+          }
+        }
+      }
     }
   }
 }
